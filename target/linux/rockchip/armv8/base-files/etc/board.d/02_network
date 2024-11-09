@@ -45,7 +45,9 @@ rockchip_setup_interfaces()
 	widora,mangopi-m28k-pro)
 		ucidef_set_interfaces_lan_wan 'eth0' 'eth1'
 		;;
-	fastrhino,r68s|\
+	fastrhino,r68s)
+		ucidef_set_interfaces_lan_wan 'eth0 eth1 eth2' 'eth3'
+		;;
 	hinlink,opc-h68k)
 		ucidef_set_interfaces_lan_wan 'eth0 eth2 eth3' 'eth1'
 		;;
